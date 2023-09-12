@@ -1,0 +1,68 @@
+* {
+  font-family: "Red Hat Display", Sans-serif;
+  color: #343f5a;
+}
+
+.flex_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 170vh;
+  margin: 0 auto;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+// Small Devices
+@media (max-width: 990px) {
+  .flex_container {
+    flex-direction: column;
+    width: 85%;
+  }
+  .title {
+    margin-top: 60px;
+    font-size: 25px;
+  }
+  .info {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.75em;
+  }
+  .photo {
+    height: auto;
+    width: 60vw;
+    margin: 4.343vw 0 0 12.121vw;
+  }
+}
+
+// Medium to Large Devices (e.g., laptops, desktops)
+@media (min-width: 991px) {
+  .title {
+    font-size: 36px;
+    margin-top: 230px;
+  }
+
+  .info {
+    max-width: 80%;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.75em;
+  }
+
+  .photo {
+    height: auto;
+    width: 400px;
+    margin: 85px 0 250px 0;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1023px) {
+  .flex_container {
+    margin-bottom: -220px;
+  }
+}

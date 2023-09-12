@@ -1,0 +1,116 @@
+* {
+  font-family: "Red Hat Display", Sans-serif;
+}
+
+// The Media Queries are based on Quasar Responsive Design
+// Small Devices (e.g., portrait tablets and large phones)
+@media (max-width: 599px) {
+  .lagueslo_logo {
+    height: auto;
+    width: 90vw;
+    margin-top: 103px;
+    margin-left: 15px;
+  }
+  .h1_toprated {
+    color: #343f59;
+    font-size: 25px;
+    text-shadow: 0.1px 0.1px 0px currentColor;
+    line-height: 1.4em;
+    margin-left: 20px;
+    margin-top: 60px;
+  }
+  .sub_toprated {
+    margin-top: 12px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #5c667f;
+  }
+  .contact_us_button {
+    margin-top: 31px;
+    width: 150px;
+    margin-left: 20px;
+    background: linear-gradient(to right, #368ff4, #00bce3);
+    color: white;
+  }
+  .comp_humans {
+    height: auto;
+    width: 93.043vw;
+    margin-left: 18px;
+    margin-top: 37px;
+  }
+}
+
+// Medium Devices (e.g., landscape tablets, some small laptops)
+@media (min-width: 600px) and (max-width: 1023px) {
+  .lagueslo_logo {
+    height: auto;
+    width: 26.953vw;
+    margin-top: 114px;
+    margin-left: 152px;
+  }
+  .h1_toprated {
+    font-size: 25px;
+    color: #343f59;
+    line-height: 1.4em;
+    margin-left: 20px;
+    margin-top: 18px;
+  }
+  .sub_toprated {
+    margin-top: 12px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #5c667f;
+  }
+  .contact_us_button {
+    margin-top: 31px;
+    width: 150px;
+    margin-left: 20px;
+    background: linear-gradient(to right, #368ff4, #00bce3);
+    color: white;
+  }
+  .comp_humans {
+    margin-top: 101px;
+    margin-left: -47px;
+    height: auto;
+    width: 44.792vw;
+  }
+}
+
+// Large Devices (e.g., laptops, desktops)
+@media (min-width: 1024px) {
+  .lagueslo_logo {
+    height: auto;
+    width: 350px;
+    margin-top: 234px;
+    margin-left: 250px;
+  }
+
+  .h1_toprated {
+    margin-left: 80px;
+    margin-top: 30px;
+    color: #343f59;
+    line-height: 1.4em;
+  }
+
+  .sub_toprated {
+    margin-top: 14px;
+    margin-left: 80px;
+    font-size: x-large;
+    color: #5c667f;
+  }
+
+  .contact_us_button {
+    margin-top: 12px;
+    width: 150px;
+    margin-left: 80px;
+    background: linear-gradient(to right, #368ff4, #00bce3);
+    color: white;
+  }
+
+  .comp_humans {
+    margin-top: 166px;
+    margin-left: -27px;
+    height: auto;
+    width: 500px;
+  }
+}

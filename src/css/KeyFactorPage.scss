@@ -1,0 +1,195 @@
+.center_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background {
+  background: linear-gradient(to right, #368ff4, #00bce3);
+}
+
+.white_card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+// The Media Queries are based on Quasar Responsive Design
+// Small Devices (e.g., portrait tablets and large phones)
+@media (max-width: 599px) {
+  .background {
+    margin-top: 104px;
+  }
+  .key_factor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    color: #ffffff;
+    font-family: "Roboto", Sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    margin-top: 19px;
+  }
+  .flex_direction {
+    flex-direction: column;
+  }
+  .white_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    background: white;
+    border-radius: 10px;
+    width: 90vw;
+    margin-top: 48px;
+    margin-left: 5vw;
+  }
+
+  .photo {
+    margin-top: 20px;
+    margin-bottom: 18px;
+    height: auto;
+    width: 150px;
+    align-items: center;
+  }
+
+  .white_card_title {
+    font-family: "Red Hat Display", Sans-serif;
+    color: #343f5a;
+    font-size: 16px;
+  }
+
+  .white_card:nth-child(1) {
+    margin-top: 85px;
+  }
+
+  .margin_bottom {
+    margin-bottom: 116px;
+  }
+}
+
+// Medium Devices (e.g., landscape tablets, some small laptops)
+@media (min-width: 600px) and (max-width: 1023px) {
+  .background {
+    margin-top: 174px;
+  }
+  .key_factor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    color: #ffffff;
+    font-family: "Roboto", Sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .white_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    background: white;
+    border-radius: 10px;
+    width: 45vw;
+    margin-top: 69px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .white_card:nth-child(2n) {
+    margin-left: -1.953vw;
+  }
+  .white_card:nth-child(3),
+  .white_card:nth-child(4) {
+    margin-bottom: 105px;
+  }
+  .margin_top {
+    margin-top: 39px;
+  }
+  .photo {
+    margin-bottom: 40px;
+    height: auto;
+    width: 141px;
+    align-items: center;
+  }
+
+  .white_card_title {
+    font-family: "Red Hat Display", Sans-serif;
+    color: #343f5a;
+    font-size: 16px;
+  }
+}
+
+// Large Devices (e.g., laptops, desktops)
+@media (min-width: 1024px) {
+  .background {
+    margin-top: 225px;
+  }
+  .key_factor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Roboto", Sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    margin-top: 62px;
+  }
+
+  .margin_left {
+    margin-left: 38px;
+  }
+
+  .margin_right {
+    margin-right: 38px;
+  }
+
+  .white_card {
+    display: inline-block;
+    background: white;
+    height: 323px;
+    width: 21.68vw;
+    max-width: 255px;
+    border-radius: 10px;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 152px;
+    margin-top: 80px;
+  }
+
+  .gutter {
+    margin-left: 30px;
+  }
+
+  .photo {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    height: auto;
+    width: 141px;
+    align-items: center;
+  }
+
+  .white_card_title {
+    font-family: "Red Hat Display", Sans-serif;
+    color: #343f5a;
+    font-size: 16px;
+  }
+
+  .title_1_margin {
+    margin-top: 6px;
+  }
+  .title_2_margin {
+    margin-top: 16px;
+  }
+  .title_3_margin {
+    margin-top: 6px;
+  }
+}

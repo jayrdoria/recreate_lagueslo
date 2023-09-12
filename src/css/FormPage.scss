@@ -1,0 +1,157 @@
+* {
+  font-family: "Red Hat Display", Sans-serif;
+}
+
+.flex_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media (max-width: 990px) {
+  .flex_container {
+    flex-direction: column;
+  }
+  .flex_container > .card {
+    background: linear-gradient(to right, #358ff3, #00bee3);
+    border-radius: 10px;
+    padding: 20px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .title {
+    margin-top: 10px;
+    color: white;
+  }
+
+  .subtitle {
+    color: white;
+  }
+  .input_subs {
+    padding: 0;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 30px;
+  }
+  .flex_container > .email_card {
+    background: #eef6ff;
+    border: 3px solid #dee3f5;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 80px;
+  }
+  .photo {
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  .input_field {
+    font-family: "Roboto", "Sans serif";
+    font-size: 16px;
+    color: #7a7a7a;
+  }
+  .red {
+    color: #fb7f84;
+  }
+}
+
+@media (min-width: 991px) {
+  .flex_container > .card {
+    margin: 100px 11px 0 0;
+    background: linear-gradient(to right, #358ff3, #00bee3);
+    border-radius: 10px;
+    padding: 20px;
+    height: 25.227vw;
+    max-height: 290px;
+    max-width: 450px;
+    width: 34.309vw;
+  }
+
+  .title {
+    margin-top: 10px;
+    color: white;
+  }
+
+  .subtitle {
+    color: white;
+  }
+
+  .input_subs {
+    padding: 0;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 30px;
+  }
+
+  .flex_container > .email_card {
+    background: #eef6ff;
+    border: 3px solid #dee3f5;
+    max-height: 495px;
+    max-width: 810px;
+    height: 46vw;
+    width: 59.536vw;
+    border-radius: 10px;
+    margin-bottom: 120px;
+  }
+
+  .photo {
+    position: absolute;
+    height: auto;
+    width: 10.595vw;
+    margin: 150px 0 0 12px;
+  }
+
+  .input_field {
+    font-family: "Roboto", "Sans serif";
+    font-size: 16px;
+    margin: 30px 50px 0 200px;
+    color: #7a7a7a;
+  }
+
+  .text_margin_bottom {
+    margin-bottom: 5px;
+  }
+
+  .red {
+    color: #fb7f84;
+  }
+}
+
+.subscribe_button {
+  margin-top: 5px;
+  height: 30px;
+  width: 80px;
+  color: white;
+  background: linear-gradient(to right, #0a5904 50%, #4e81f9 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.3s ease-out;
+}
+
+.subscribe_button:hover {
+  background-position: left;
+}
+
+.send_button {
+  color: white;
+  margin-top: 15px;
+  background: linear-gradient(
+    to right,
+    #0a5904 50%,
+    #409eff 50%
+  ); // Use a slightly transparent version of the button color
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.3s ease-out;
+}
+
+.send_button:hover {
+  background-position: left;
+}
