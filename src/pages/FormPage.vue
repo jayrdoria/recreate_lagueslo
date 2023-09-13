@@ -14,7 +14,6 @@
         class="input_subs"
       >
         <q-btn
-          :disable="!isValidEmail || email === ''"
           push
           flat
           no-caps
@@ -60,12 +59,7 @@
           placeholder="Your Message"
           :rules="[noNullValues]"
         />
-        <q-btn
-          class="send_button"
-          label="Send"
-          @click="submitContactForm"
-          :disable="!isContactFormValid"
-        />
+        <q-btn class="send_button" label="Send" @click="submitContactForm" />
       </div>
     </div>
   </div>

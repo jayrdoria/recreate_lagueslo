@@ -62,6 +62,17 @@ export default {
 
           if (response.data && response.status === 200) {
             console.log("Newsletter Email sent successfully via SES!");
+            // Set the submitted flag
+            this.submitted = true;
+
+            // Reset the form
+            this.email = "";
+            this.isValidEmail = false;
+
+            // Reset the submitted flag after a short delay to avoid immediate validation
+            setTimeout(() => {
+              this.submitted = false;
+            }, 100);
           } else {
             console.error("Error sending email via SES:", response.data);
           }
@@ -69,17 +80,6 @@ export default {
           console.error("Error:", error.message);
         }
       }
-      // Set the submitted flag
-      this.submitted = true;
-
-      // Reset the form
-      this.email = "";
-      this.isValidEmail = false;
-
-      // Reset the submitted flag after a short delay to avoid immediate validation
-      setTimeout(() => {
-        this.submitted = false;
-      }, 100);
     },
     async submitContactForm() {
       if (this.isContactFormValid) {
@@ -96,6 +96,20 @@ export default {
 
           if (response.data && response.status === 200) {
             console.log("Contact Email sent successfully via SES!");
+            // Set the contactFormSubmitted flag
+            this.contactFormSubmitted = true;
+
+            // Reset the contact form
+            this.contactName = "";
+            this.contactEmail = "";
+            this.contactMessage = "";
+            this.isContactFormValid = false;
+
+            // Reset the contactFormSubmitted flag after a short delay
+            setTimeout(() => {
+              this.contactFormSubmitted = false;
+              this.checkContactFormValidity();
+            }, 100);
           } else {
             console.error(
               "Error sending contact email via SES:",
@@ -106,20 +120,6 @@ export default {
           console.error("Error:", error.message);
         }
       }
-      // Set the contactFormSubmitted flag
-      this.contactFormSubmitted = true;
-
-      // Reset the contact form
-      this.contactName = "";
-      this.contactEmail = "";
-      this.contactMessage = "";
-      this.isContactFormValid = false;
-
-      // Reset the contactFormSubmitted flag after a short delay
-      setTimeout(() => {
-        this.contactFormSubmitted = false;
-        this.checkContactFormValidity();
-      }, 100);
     },
     checkContactFormValidity() {
       this.isContactFormValid =
