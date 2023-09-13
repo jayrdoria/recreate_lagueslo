@@ -1,10 +1,10 @@
 <template>
   <div>
-    <HomePage />
+    <HomePage @scroll-to-form="scrollToForm" />
     <KeyFactorPage />
     <AboutUsPage />
-    <WhatWeCanDoPage />
-    <FormPage />
+    <WhatWeCanDoPage @scroll-to-form="scrollToForm" />
+    <FormPage ref="formPage" />
   </div>
 </template>
 
@@ -16,6 +16,14 @@ import WhatWeCanDoPage from "./pages/WhatWeCanDoPage.vue";
 import FormPage from "./pages/FormPage.vue";
 
 export default {
+  methods: {
+    scrollToForm() {
+      this.$nextTick(() => {
+        const formElement = this.$refs.formPage.$el;
+        formElement.scrollIntoView({ behavior: "smooth" });
+      });
+    },
+  },
   components: {
     HomePage,
     KeyFactorPage,

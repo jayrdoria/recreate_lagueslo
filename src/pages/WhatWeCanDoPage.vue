@@ -13,6 +13,7 @@
         no-caps
         class="contact_us_button q-pa-md text-weight-bold"
         label="Contact Us"
+        @click="$emit('scroll-to-form')"
       />
     </div>
     <div class="col-md-4">
